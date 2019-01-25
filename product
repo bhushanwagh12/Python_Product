@@ -1,0 +1,17 @@
+class Building:
+    contractor_name="bhatiya_anna"
+    def __init__(self,bid,bname,baddr,bfloor):
+        self.building_id=bid
+        self.building_name=bname
+        self.building_addr=baddr
+        self.building_floor=bfloor
+    def display_info(self):
+        print("Building Contractor Name =",Building.contractor_name)
+        print("Building ID =",self.building_id)
+        print("Building Name =",self.building_name)
+        print("Building Address =",self.building_addr)
+        print("Building Total Floor =",self.building_floor)
+b1=(input("Enter the Building Name ="))
+b1=(input("Enter building address"))
+b1=Building(12,"Navkar apartment","Nashik",4)
+b1.display_info()
